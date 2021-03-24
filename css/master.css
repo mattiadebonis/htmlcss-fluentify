@@ -5,6 +5,12 @@
 
 }
 
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header */
 header{
     text-decoration: none;
     text-transform: uppercase;
@@ -16,9 +22,7 @@ header{
     height: 550px;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
+.bar{
     height: 80px;
     line-height: 80px;
 
@@ -55,7 +59,7 @@ img{
 
 .jumbotron{
     height: 100%;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-right: 60%;
 }
 
@@ -66,3 +70,57 @@ img{
 .cont-button>p{
     display: inline-block;
 }
+
+/*sezione disclaimer */
+.disclaimer{
+    background-color: brown;
+    height: 150px;
+    width: 100%;
+
+}
+
+/*sezione servizi */
+.offerta{
+    height: 650px;
+}
+
+.servizi{
+    background-color: burlywood;
+    height: 550px;
+    width: 100%;
+}
+
+.piano{
+    width:30%;
+    height: 100%;
+    background-color: darkgrey;
+}
+
+.tutor{
+    width:30%;
+    height: 100%;
+    background-color: darkgrey;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.monitora{
+    width:30%;
+    height: 100%;
+    background-color: darkgrey;
+}
+
+
+.test{
+    background-color:darkmagenta;
+    height: 550px;
+    width: 100%;
+}
+
+.note{
+    background-color: darkcyan;
+    height: 100px;
+    width: 100%;
+}
+
+
