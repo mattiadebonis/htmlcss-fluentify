@@ -17,22 +17,60 @@ body{
 }
 
 
-.button{
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.list-menu>li{
     display: inline-block;
-    font-size: 14px;
-    color: white;
+    list-style-type: none;
+    padding: 0px;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid white;
-    text-transform: uppercase;
     font-size: 14px;
+    text-transform: uppercase;
+
 }
 
-.green{
+a{
+    text-decoration: none;
+}
+a:not(:hover){
+    color: white;
+}
+
+
+
+a:hover{
+    color: rgb(124,187,3);
+}
+
+.btn{
+    font-size: 14px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 14px;
+    line-height:14px;
+    margin-right: 20px;
+}
+
+.btn-green{
     background-color: rgb(124,187,3);
     border-color: rgb(124,187,3);
 }
 
+.btn-green > a:hover{
+    color: white;
+}
+
+.btn-large{
+    line-height: 36px;
+    width: 140px;
+    margin-top: 20px;
+}
 
 /* header */
 header{
@@ -46,71 +84,75 @@ header{
 }
 
 
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-.list-menu>li{
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
+/* barra di navigazione */
+.barra{
+    height: 80px;
+    line-height: 80px;
 }
-
-li>a{
-    text-decoration: none;
-    font-size: 14px;
-    padding: 10px;
-}
-
 
 .cont-logo{
     width: 15%;
-
+    height: 100%;    
 }
+
+.cont-logo>img{
+    vertical-align: middle;
+}
+
 .cont-menu{
     width: 45%;
-    height: 80px;
-    line-height: 80px;
-    text-transform: uppercase;
-
-}
-
-.jumbotron{
     height: 100%;
-    padding-top: 8%;
-    padding-right: 60%;
+    vertical-align: middle;
+
 }
 
 .cont-button{
+    height: 100%;
     width: 40%;
-    vertical-align: center;
-}
-.barra{
+    text-align:right;
     vertical-align: middle;
 }
-.cont-button>p{
-    display: inline-block;
+
+
+.jumbotron{
+    position:relative;
+    height: 470px;
+    
 }
+.jumbotron-text{
+    position:absolute;
+    top: 25%;
+    width: 50%;
+    font-size: 22px;
+
+}
+
 
 /*sezione disclaimer */
 .disclaimer{
-    background-color: brown;
+    position: relative;
+    background-color: lightgray;
     height: 150px;
     width: 100%;
 
 }
 
+.disclaimer>p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /*sezione servizi */
-
-
 .servizi{
     background-color: burlywood;
     height: 550px;
     width: 100%;
+    text-align: center;
 }
+
 
 .piano{
     width:30%;
@@ -132,12 +174,14 @@ li>a{
     background-color: darkgrey;
 }
 
+/*sezione test */
 .test{
     background-color:darkmagenta;
     height: 550px;
     width: 100%;
 }
 
+/* note piè di pagina */
 .note{
     background-color: darkcyan;
     height: 100px;
