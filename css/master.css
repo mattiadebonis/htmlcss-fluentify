@@ -207,9 +207,22 @@ header{
 /*sezione test */
 .test{
     background-color:darkmagenta;
-    height: 550px;
     width: 100%;
 }
+
+
+.cont-img-test{
+    margin: 5%;
+    width: 40%;
+}
+
+.cont-testo-test{
+    margin: 5%;
+
+    width: 40%;
+}
+
+
 
 /* note piè di pagina */
 .note{
