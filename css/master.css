@@ -16,6 +16,9 @@ body{
     float:left;
 }
 
+h1,h2,h3{
+    font-weight: normal;
+}
 
 .clearfix::after {
     content: "";
@@ -26,27 +29,27 @@ body{
 .list-menu>li{
     display: inline-block;
     list-style-type: none;
-    padding: 0px;
-    padding: 10px;
     font-size: 14px;
     text-transform: uppercase;
+    margin: 7px;
 
 }
 
-a{
+.link-head:not(:hover){
+    color: white;
     text-decoration: none;
 }
-a:not(:hover){
+.link-head:hover{
     color: white;
+    text-decoration: none;
 }
-
-
 
 a:hover{
     color: rgb(124,187,3);
 }
 
 .btn{
+    display: inline-block;
     font-size: 14px;
     color: white;
     padding: 5px 10px;
@@ -54,7 +57,6 @@ a:hover{
     border: 1px solid white;
     font-size: 14px;
     line-height:14px;
-    margin-right: 20px;
 }
 
 .btn-green{
@@ -62,14 +64,18 @@ a:hover{
     border-color: rgb(124,187,3);
 }
 
-.btn-green > a:hover{
+.btn-green:hover{
     color: white;
 }
 
 .btn-large{
-    line-height: 36px;
-    width: 140px;
-    margin-top: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.testo{
+    line-height: 22px;
+    color: gray;
 }
 
 /* header */
@@ -113,19 +119,22 @@ header{
     vertical-align: middle;
 }
 
-
 .jumbotron{
     position:relative;
     height: 470px;
+    font-size: 24px;
+
     
 }
+.jumbotron-text>h1{
+    padding-bottom: 5%;
+    padding-right: 10%;
 
+}
 .jumbotron-text{
     position:absolute;
     top: 25%;
     width: 50%;
-    font-size: 22px;
-
 }
 
 
@@ -133,24 +142,22 @@ header{
 .disclaimer{
     position: relative;
     background-color: lightgray;
-    height: 150px;
+    height: 130px;
     width: 100%;
-
 }
 
-.disclaimer>h2{
+
+.disclaimer-text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    line-height: 45px;
 }
-
-
 
 /*sezione servizi */
 .servizi{
-    background-color: burlywood;
     width: 100%;
     text-align: center;
 }
@@ -158,12 +165,11 @@ header{
 .piano{
     width:30%;
     height: 100%;
-    background-color: darkgrey;
     padding:2%;
 }
 
 .immagine-sottosezione{
-    width: 100px;
+    height: 150px;
     margin: 5%;
 }
 
@@ -175,60 +181,88 @@ header{
 
 .titolo-sottosezione{
     color: rgb(124,187,3);
+    font-size: 22px;
 
 }
 .divisore-sottosezione{
     margin: 5% 30%;
     color: black;
 }
-.testo{
-    line-height: 22px;
-    color: gray;
-}
+
 
 .tutor{
-    width:30%;
+    width: 30%;
     height: 100%;
-    background-color: darkgrey;
     margin-left: 5%;
     margin-right: 5%;
-    padding:2%;
+    padding: 2%;
 
 }
 
 .monitora{
-    width:30%;
+    width: 30%;
     height: 100%;
-    background-color: darkgrey;
-    padding:2%;
+    padding: 2%;
 
 }
 
-/*sezione test */
+/*sezione test*/
 .test{
-    background-color:darkmagenta;
     width: 100%;
 }
 
 
-.cont-img-test{
+.sezione-test{
     margin: 5%;
     width: 40%;
+    height: 100%;
+    
+}
+.titolo-test{
+
+    font-size: 36px;
+    margin-bottom: 2%;
 }
 
-.cont-testo-test{
-    margin: 5%;
+.divisore-main{
+    color: light-gray;
+    margin: 1%;
 
-    width: 40%;
 }
-
-
-
 /* note piè di pagina */
 .note{
-    background-color: darkcyan;
-    height: 100px;
+    background-color: lightgray;
     width: 100%;
 }
 
+.footer-sinistra{
+    margin-top: 50px;
+    width: 30%;
+}
 
+
+
+.footer-centro{
+    position: relative;
+    margin-top: 50px;
+    width: 30%;
+}
+.sel-cl{
+    position:absolute;
+    right: 0px;    
+}
+
+.footer-destra{
+    margin: 25px;
+    width: 20%;
+}
+
+
+.container-ft-btn{
+    text-align: center;
+}
+
+.blk-marg{
+    display: block;
+    margin:10px;
+}
