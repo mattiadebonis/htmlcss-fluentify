@@ -119,6 +119,7 @@ header{
     height: 470px;
     
 }
+
 .jumbotron-text{
     position:absolute;
     top: 25%;
@@ -137,13 +138,15 @@ header{
 
 }
 
-.disclaimer>p{
+.disclaimer>h2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
 
 /*sezione servizi */
 .servizi{
@@ -153,11 +156,26 @@ header{
     text-align: center;
 }
 
-
 .piano{
     width:30%;
     height: 100%;
     background-color: darkgrey;
+    padding:2%;
+}
+
+.titolo-sottosezione{
+    text-align: center;
+}
+.divisore-sottosezione{
+    margin: 5% 30%;
+    color: black;
+}
+
+.immagine-sottosezione{
+    width: 45%;
+    margin : 5%;
+    
+
 }
 
 .tutor{
