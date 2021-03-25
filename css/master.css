@@ -4,29 +4,48 @@
     padding:0;
 
 }
+body{
+    font-family: 'Roboto', sans-serif;
 
+}
 .container{
     width: 80%;
     margin: 0 auto;
 }
+.float{
+    float:left;
+}
+
+
+.button{
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.green{
+    background-color: rgb(124,187,3);
+    border-color: rgb(124,187,3);
+}
+
 
 /* header */
 header{
-    text-decoration: none;
-    text-transform: uppercase;
     background-image: url(../img/background-header.png);
     background-repeat: no-repeat;
     background-position: 111% bottom;
     background-size: 60% auto;
     background-color: rgb(12,50,90);
     height: 550px;
+    color: white;
 }
 
-.bar{
-    height: 80px;
-    line-height: 80px;
 
-}
 
 .clearfix::after {
     content: "";
@@ -37,25 +56,27 @@ header{
 .list-menu>li{
     display: inline-block;
     list-style-type: none;
-    padding: 0 ;
+    padding: 0;
 }
 
-.float{
-    float:left;
+li>a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
 }
-img{
-    vertical-align: center;
 
-}
+
 .cont-logo{
     width: 15%;
 
 }
 .cont-menu{
     width: 45%;
-  
-}
+    height: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
 
+}
 
 .jumbotron{
     height: 100%;
@@ -65,8 +86,11 @@ img{
 
 .cont-button{
     width: 40%;
+    vertical-align: center;
 }
-
+.barra{
+    vertical-align: middle;
+}
 .cont-button>p{
     display: inline-block;
 }
@@ -80,9 +104,7 @@ img{
 }
 
 /*sezione servizi */
-.offerta{
-    height: 550px;
-}
+
 
 .servizi{
     background-color: burlywood;
@@ -109,7 +131,6 @@ img{
     height: 100%;
     background-color: darkgrey;
 }
-
 
 .test{
     background-color:darkmagenta;
