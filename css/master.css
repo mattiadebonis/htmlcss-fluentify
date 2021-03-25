@@ -151,7 +151,6 @@ header{
 /*sezione servizi */
 .servizi{
     background-color: burlywood;
-    height: 550px;
     width: 100%;
     text-align: center;
 }
@@ -163,19 +162,28 @@ header{
     padding:2%;
 }
 
+.immagine-sottosezione{
+    width: 100px;
+    margin: 5%;
+}
+
+.cont-img-sott{
+    position
+    width: 100%;
+    align-items: center;
+}
+
 .titolo-sottosezione{
-    text-align: center;
+    color: rgb(124,187,3);
+
 }
 .divisore-sottosezione{
     margin: 5% 30%;
     color: black;
 }
-
-.immagine-sottosezione{
-    width: 45%;
-    margin : 5%;
-    
-
+.testo{
+    line-height: 22px;
+    color: gray;
 }
 
 .tutor{
@@ -184,12 +192,16 @@ header{
     background-color: darkgrey;
     margin-left: 5%;
     margin-right: 5%;
+    padding:2%;
+
 }
 
 .monitora{
     width:30%;
     height: 100%;
     background-color: darkgrey;
+    padding:2%;
+
 }
 
 /*sezione test */
