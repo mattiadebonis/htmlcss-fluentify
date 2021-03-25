@@ -119,6 +119,8 @@ header{
     vertical-align: middle;
 }
 
+
+/*jumbotron */
 .jumbotron{
     position:relative;
     height: 470px;
@@ -153,7 +155,6 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 45px;
 }
 
 /*sezione servizi */
@@ -229,6 +230,11 @@ header{
     margin: 1%;
 
 }
+
+.call-to-action{
+    display: block;
+    margin-top: 10px;
+}
 /* note piè di pagina */
 .note{
     background-color: lightgray;
@@ -239,8 +245,6 @@ header{
     margin-top: 50px;
     width: 30%;
 }
-
-
 
 .footer-centro{
     position: relative;
